@@ -11,7 +11,12 @@ module.exports = {
       },
       accn: Sequelize.STRING,
       cik: {
-        type: Sequelize.STRING,
+        type: Sequelize.NUMERIC,
+        unique: true,
+        allowNull: false
+      },
+      cik_name: {
+        type: DataTypes.STRING,
         unique: true,
         allowNull: false
       },

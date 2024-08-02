@@ -12,6 +12,11 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.STRING
     },
     cik: {
+      type: DataTypes.NUMERIC,
+      unique: true,
+      allowNull: false
+    },
+    cik_name: {
       type: DataTypes.STRING,
       unique: true,
       allowNull: false
