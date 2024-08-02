@@ -1,0 +1,4 @@
+# create migration
+# npx sequelize-cli migration:generate --name create-company
+
+# Run migration: npx sequelize-cli db:migrate
